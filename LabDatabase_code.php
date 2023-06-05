@@ -109,14 +109,15 @@ Scientist.name FROM Experiments JOIN Scientist ;
   SELECT  Experiments.name, Experiments.experiment_id, Department.department_id,
 Department.name FROM Experiments JOIN Department ;
 
+INSERT INTO Department(name) VALUES ('Molecular Biology');
+INSERT INTO Department(name) VALUES('Bioinformatics');
+INSERT INTO Department(name) VALUES('Synthetic Biology');
 
   INSERT INTO Scientist(name, manager, department_id) VALUES ('Katherine Jarvis', 'Ricardo',2);
   INSERT INTO Scientist(name, manager, department_id) VALUES('Sari','Josh Kelley', 1);
   INSERT INTO Scientist(name, manager, department_id) VALUES('Charlie','Jin', 3);
 
-  INSERT INTO Department(name) VALUES ('Molecular Biology');
-  INSERT INTO Department(name) VALUES('Bioinformatics');
-  INSERT INTO Department(name) VALUES('Synthetic Biology');
+  
 
   INSERT INTO SOP(name) VALUES ('Single Cell Sequencing - K562');
   INSERT INTO SOP(name) VALUES('Standard Assembly');
